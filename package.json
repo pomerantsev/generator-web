@@ -2,16 +2,12 @@
   "name": "generator-web",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "yeoman-generator"
   ],
   "author": "Pavel Pomerantsev",
   "license": "ISC",
   "dependencies": {
-    "yeoman-generator": "^0.17.7"
+    "yeoman-generator": "0.17.7"
   }
 }
