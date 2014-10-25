@@ -20,5 +20,8 @@ module.exports = yeoman.generators.Base.extend({
         projectName: this.projectName
       });
     }
+  },
+  install: function () {
+    this.installDependencies();
   }
 });
