@@ -19,6 +19,20 @@ module.exports = yeoman.generators.Base.extend({
       this.template('_package.json', 'package.json', {
         projectName: this.projectName
       });
+      this.template('_bower.json', 'bower.json', {
+        projectName: this.projectName
+      });
+      this.copy('_Gruntfile.js', 'Gruntfile.js');
+      this.copy('_.gitignore', '.gitignore');
+
+      this.mkdir('src');
+      this.template('src/_index.html', 'src/index.html', {
+        projectName: this.projectName
+      });
+      this.mkdir('src/css');
+      this.copy('src/css/_style.css', 'src/css/style.css');
+      this.mkdir('src/js');
+      this.copy('src/js/_script.js', 'src/js/script.js');
     }
   },
   install: function () {
